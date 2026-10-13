@@ -1,0 +1,18 @@
+[project]
+name = "roadmind-lite"
+version = "1.0.0"
+description = "Road-scene object detection research prototype built with Streamlit and YOLO11."
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [{ name = "Victor Taiwo" }]
+
+[tool.ruff]
+line-length = 120
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "SIM", "BLE"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
